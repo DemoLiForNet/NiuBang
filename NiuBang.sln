@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuBang.Admin", "NiuBang.Admin\NiuBang.Admin.csproj", "{0076D496-DC56-4915-B0D5-55BF2A9F6782}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuBang.Core", "NiuBang.Core\NiuBang.Core.csproj", "{60D7F2DF-185E-4B07-887C-A8D5DF5A67E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuBang.Model", "NiuBang.Model\NiuBang.Model.csproj", "{6E11908D-8389-4CF6-B5E6-AA974D93785D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuBang.Service", "NiuBang.Service\NiuBang.Service.csproj", "{42FCA855-EF89-44DB-BCF5-310F6A9EA307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NiuBang.Commom", "NiuBang.Commom\NiuBang.Commom.csproj", "{E28535AD-CD9D-4230-9109-187DC61986E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{0076D496-DC56-4915-B0D5-55BF2A9F6782}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0076D496-DC56-4915-B0D5-55BF2A9F6782}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0076D496-DC56-4915-B0D5-55BF2A9F6782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60D7F2DF-185E-4B07-887C-A8D5DF5A67E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D7F2DF-185E-4B07-887C-A8D5DF5A67E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D7F2DF-185E-4B07-887C-A8D5DF5A67E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60D7F2DF-185E-4B07-887C-A8D5DF5A67E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E11908D-8389-4CF6-B5E6-AA974D93785D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E11908D-8389-4CF6-B5E6-AA974D93785D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E11908D-8389-4CF6-B5E6-AA974D93785D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E11908D-8389-4CF6-B5E6-AA974D93785D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FCA855-EF89-44DB-BCF5-310F6A9EA307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FCA855-EF89-44DB-BCF5-310F6A9EA307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FCA855-EF89-44DB-BCF5-310F6A9EA307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FCA855-EF89-44DB-BCF5-310F6A9EA307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E28535AD-CD9D-4230-9109-187DC61986E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E28535AD-CD9D-4230-9109-187DC61986E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E28535AD-CD9D-4230-9109-187DC61986E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E28535AD-CD9D-4230-9109-187DC61986E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
