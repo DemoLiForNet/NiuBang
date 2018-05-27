@@ -15,17 +15,17 @@ namespace NiuBang.Admin.Providers
 {
     public partial class DependencyRegistrar
     {
-        public static ContainerBuilder CurrentBuilder { get; set; }
-        public static IContainer CurrentContainerget { get; set; }
+        private static ContainerBuilder CurrentBuilder { get; set; }
+        private static IContainer CurrentContainerget { get; set; }
         public static void RegisterDependency()
         {
             CurrentBuilder = new ContainerBuilder();
             SetupResolveRules(CurrentBuilder);
-            CurrentBuilder.RegisterControllers(System.Reflection.Assembly.GetExecutingAssembly());
+            CurrentBuilder.RegisterControllers(Assembly.GetExecutingAssembly());
             var container = CurrentContainerget = CurrentBuilder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
-        private static void SetupResolveRules(ContainerBuilder builder)
+        protected static void SetupResolveRules(ContainerBuilder builder)
         {
             builder.Register<IdentityDbContext<AppUser>>(c => HttpContext.Current.GetOwinContext().Get<Core.NiuBangDbConetxt>()).InstancePerRequest();
             builder.Register(c => HttpContext.Current.GetOwinContext().Get<AppUserManager>()).InstancePerRequest();
@@ -37,6 +37,7 @@ namespace NiuBang.Admin.Providers
 
 
         }
+
         #region 缓存Services
         private static Lazy<Assembly> Assemblies = new Lazy<Assembly>(LoadAssemblies);
         private static Assembly LoadAssemblies()
