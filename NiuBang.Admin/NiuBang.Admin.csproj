@@ -211,6 +211,24 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NiuBang.Commom\NiuBang.Commom.csproj">
+      <Project>{e28535ad-cd9d-4230-9109-187dc61986e9}</Project>
+      <Name>NiuBang.Commom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NiuBang.Core\NiuBang.Core.csproj">
+      <Project>{60d7f2df-185e-4b07-887c-a8d5df5a67e5}</Project>
+      <Name>NiuBang.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NiuBang.Model\NiuBang.Model.csproj">
+      <Project>{6e11908d-8389-4cf6-b5e6-aa974d93785d}</Project>
+      <Name>NiuBang.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NiuBang.Service\NiuBang.Service.csproj">
+      <Project>{42fca855-ef89-44db-bcf5-310f6a9ea307}</Project>
+      <Name>NiuBang.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
