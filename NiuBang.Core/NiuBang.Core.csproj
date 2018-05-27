@@ -58,6 +58,8 @@
     <Compile Include="Base\IBaseEntity.cs" />
     <Compile Include="Domain\AppRole.cs" />
     <Compile Include="Domain\AppUser.cs" />
+    <Compile Include="Infrastructure\AppRoleManager.cs" />
+    <Compile Include="Infrastructure\AppUerManager.cs" />
     <Compile Include="NiuBangDbConetxt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,5 +67,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
