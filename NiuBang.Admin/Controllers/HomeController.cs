@@ -13,14 +13,23 @@ namespace NiuBang.Admin.Controllers
         {
             _featureService = featureService;
         }
+        public PartialViewResult Header()
+        {
+            return PartialView();
+        }
+        public PartialViewResult NavLeft()
+        {
+            return PartialView();
+        }
         public ActionResult Index()
         {
             return View();
         }
-        public PartialViewResult Header()
+        public PartialViewResult Footer()
         {
-            var feature = _featureService.GetFeatures();
-            return PartialView(feature);
+            return PartialView();
         }
+        
+
     }
 }
