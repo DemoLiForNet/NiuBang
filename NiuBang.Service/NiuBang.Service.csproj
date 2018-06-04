@@ -40,7 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Feature\FeatureService.cs" />
+    <Compile Include="Feature\IFeatureService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NiuBang.Core\NiuBang.Core.csproj">
+      <Project>{60d7f2df-185e-4b07-887c-a8d5df5a67e5}</Project>
+      <Name>NiuBang.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NiuBang.Model\NiuBang.Model.csproj">
+      <Project>{6e11908d-8389-4cf6-b5e6-aa974d93785d}</Project>
+      <Name>NiuBang.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

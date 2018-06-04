@@ -79,9 +79,13 @@
     <Compile Include="Base\IBaseEntity.cs" />
     <Compile Include="Domain\AppRole.cs" />
     <Compile Include="Domain\AppUser.cs" />
+    <Compile Include="Domain\Permission\Permisson.cs" />
     <Compile Include="Infrastructure\AppRoleManager.cs" />
     <Compile Include="Infrastructure\AppUserManager.cs" />
     <Compile Include="Infrastructure\AppSignManager.cs" />
+    <Compile Include="Mapping\AppRoleMap.cs" />
+    <Compile Include="Mapping\AppUserMap.cs" />
+    <Compile Include="Mapping\Permission\PermissionMap.cs" />
     <Compile Include="NiuBangDbConetxt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

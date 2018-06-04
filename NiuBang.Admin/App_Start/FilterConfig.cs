@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace NiuBang.Admin
 {
@@ -7,7 +6,8 @@ namespace NiuBang.Admin
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new Filters.MvcHandleErrorRecorder());
+            filters.Add(new Filters.NiuBangHandleException());
         }
     }
 }

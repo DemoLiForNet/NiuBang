@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace NiuBang.Admin.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
@@ -22,8 +22,6 @@ namespace NiuBang.Admin.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
