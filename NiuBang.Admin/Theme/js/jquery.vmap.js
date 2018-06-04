@@ -122,8 +122,8 @@
 
     setSize: function (width, height) {
       if (this.mode == 'svg') {
-        this.canvas.setAttribute('width', width);
-        this.canvas.setAttribute('height', height);
+        //this.canvas.setAttribute('width', width);
+        //this.canvas.setAttribute('height', height);
       } else {
         this.canvas.style.width = width + "px";
         this.canvas.style.height = height + "px";
@@ -243,7 +243,7 @@
 
     applyTransformParams: function (scale, transX, transY) {
       if (this.mode == 'svg') {
-        this.rootGroup.setAttribute('transform', 'scale(' + scale + ') translate(' + transX + ', ' + transY + ')');
+        //this.rootGroup.setAttribute('transform', 'scale(' + scale + ') translate(' + transX + ', ' + transY + ')');
       } else {
         this.rootGroup.coordorigin = (this.width - transX) + ',' + (this.height - transY);
         this.rootGroup.coordsize = this.width / scale + ',' + this.height / scale;

@@ -8,25 +8,27 @@ namespace NiuBang.Admin
         // 有关捆绑的详细信息，请访问 https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/Init").Include(
+                        "~/Theme/js/jquery-1.10.1.min.js",
+                        "~/Theme/js/jquery-migrate-1.2.1.min.js",
+                        "~/Theme/js/jquery-ui-1.10.1.custom.min.js",
+                        "~/Theme/js/bootstrap.min.js",
+                        "~/Theme/js/excanvas.min.js",
+                        "~/Theme/js/respond.min.js",
+                        "~/Theme/js/jquery.slimscroll.min.js",
+                        "~/Theme/js/jquery.blockui.min.js",
+                        "~/Theme/js/jquery.cookie.min.js",
+                        "~/Theme/js/jquery.uniform.min.js",
+                        "~/Theme/js/app.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
-            bundles.Add(new ScriptBundle("~/bundles/jqueryAjax").Include(
-                        "~/Scripts/jquery.unobtrusive*"));
-
-            // 使用要用于开发和学习的 Modernizr 的开发版本。然后，当你做好
-            // 生产准备就绪，请使用 https://modernizr.com 上的生成工具仅选择所需的测试。
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new StyleBundle("~/Admin/Init").Include(
+                      "~/Theme/css/bootstrap.min.css",
+                      "~/Theme/css/bootstrap-responsive.min.css",
+                       "~/Theme/css/font-awesome.min.css",
+                        "~/Theme/css/style-metro.css",
+                         "~/Theme/css/style.css",
+                          "~/Theme/css/style-responsive.css",
+                          "~/Theme/css/default.css"));
         }
     }
 }

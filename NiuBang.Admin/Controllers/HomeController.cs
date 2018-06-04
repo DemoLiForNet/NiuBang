@@ -19,7 +19,8 @@ namespace NiuBang.Admin.Controllers
         }
         public PartialViewResult NavLeft()
         {
-            return PartialView();
+            var nav = _featureService.GetFeatures();
+            return PartialView(nav);
         }
         public ActionResult Index()
         {
