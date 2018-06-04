@@ -1,0 +1,16 @@
+﻿@model IEnumerable<NiuBang.Model.Feature>
+<div class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom:20px;border-bottom:1px solid #e7e7e7;height:60px;">
+    <div class="container">
+        <div class="navbar-header">
+            @Html.ActionLink("牛邦", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @{
+                foreach (var item in Model)
+                {
+                    <a href="\@item.Controller\@item.Action">
+                        @item.Description
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</div>

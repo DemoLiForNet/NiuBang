@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feature\FeatureService.cs" />
     <Compile Include="Feature\IFeatureService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

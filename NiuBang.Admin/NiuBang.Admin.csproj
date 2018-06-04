@@ -186,6 +186,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Filters\MvcHandleErrorRecorder.cs" />
     <Compile Include="Filters\NiuBangHandleException.cs" />
     <Compile Include="Global.asax.cs">
@@ -193,6 +194,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\DependencyRegistrar.cs" />
+    <Compile Include="Providers\FeatureProvider.cs" />
     <Compile Include="Providers\IdentityFactory.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -249,10 +251,7 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\README.md" />
     <Content Include="Scripts\popper.min.js.map" />
@@ -262,6 +261,9 @@
     <Content Include="Views\Error\NotFound.cshtml" />
     <Content Include="Views\Error\Forbidden.cshtml" />
     <Content Include="Views\Error\InternalError.cshtml" />
+    <Content Include="Views\Home\Header.cshtml" />
+    <Content Include="Views\Role\Index.cshtml" />
+    <Content Include="Views\Role\RoleList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

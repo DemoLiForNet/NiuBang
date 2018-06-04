@@ -5,7 +5,6 @@ using Microsoft.AspNet.Identity.Owin;
 using NiuBang.Core.Domain;
 using NiuBang.Core.Infrastructure;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Web;
@@ -34,7 +33,7 @@ namespace NiuBang.Admin.Providers
             builder.Register(c => HttpContext.Current.GetOwinContext().Authentication).InstancePerRequest();
             //All Services
             builder.RegisterAssemblyTypes(Assemblies.Value).Where(p => p.Name.EndsWith("Service") && p.IsClass).AsImplementedInterfaces().InstancePerRequest();
-
+            builder.RegisterType<FeatureProvider>().As<Service.Feature.IFeatureService>().InstancePerRequest();
 
         }
 

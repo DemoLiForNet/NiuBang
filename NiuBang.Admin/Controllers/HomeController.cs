@@ -8,21 +8,19 @@ namespace NiuBang.Admin.Controllers
 {
     public class HomeController : BaseController
     {
+        private readonly Service.Feature.IFeatureService _featureService;
+        public HomeController(Service.Feature.IFeatureService featureService)
+        {
+            _featureService = featureService;
+        }
         public ActionResult Index()
         {
             return View();
         }
-
-        public ActionResult About()
+        public PartialViewResult Header()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            return View();
+            var feature = _featureService.GetFeatures();
+            return PartialView(feature);
         }
     }
 }
