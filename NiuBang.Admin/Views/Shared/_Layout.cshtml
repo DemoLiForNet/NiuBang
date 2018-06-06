@@ -1,58 +1,32 @@
 ﻿<!DOCTYPE html>
-
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<html lang="en" class="no-js">
+<html>
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
-    <title>@ViewBag.Title</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="练习项目" name="description" />
-    <meta content="Hao.Li" name="author" />
-    @Styles.Render("~/Admin/Init")
-    @RenderSection("Styles", false)
-
-    <link rel="shortcut icon" href="~/Theme/image/favicon.ico" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="page-header-fixed page-sidebar-fixed">
-    @Html.Action("Header", "Home")
-    <div class="page-container">
-        @Html.Action("NavLeft", "Home")
-        <div class="page-content">
-            <div class="container-fluid">
-                <div class="row-fluid">
-                    <div class="span12">
-                        <h3 class="page-title">
-                            @ViewBag.Title <small></small>
-                        </h3>
-                        <ul class="breadcrumb">
-                            <li>
-                                <i class="icon-home"></i>
-                                <a href="index.html">@ViewBag.Title</a>
-                                <i class="icon-angle-right"></i>
-                            </li>
-                            <li><a href="#">@ViewBag.SmallTitle</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="dashboard">
-                    @RenderBody()
-                </div>
-            </div>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">牛邦</a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            @Html.Action("Header","Home")
         </div>
-    </div>
-    @Html.Action("Footer", "Home")
+        
+    </nav>
 
-    @Scripts.Render("~/Scripts/Init")
-    <script>
-
-        jQuery(document).ready(function () {
-            App.init(); // initlayout and core plugins
-        });
-
-    </script>
-    @RenderSection("Scripts", false)
+    <main role="main" class="container">
+        @RenderBody()
+    </main>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/papper")
+    @Scripts.Render("~/bundles/base")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
